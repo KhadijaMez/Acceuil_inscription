@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil</title>
+    <style>
+        /* Ajoutez des styles CSS ici selon vos besoins */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0 20px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+            margin-top: 20px;
+        }
+        section {
+            margin: 20px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        td{
+            color: #545454;
+            text-transform: capitalize;
+            font-weight: 600
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="#accueil">Accueil</a>
+            <a href="#projets">Projets</a>
+            <a href="#services">Services</a>
+            <a href="./Inscription.html">Inscription</a>
+        </nav>
+        <img src="./work.jpg" alt="Image d'en-tête">
+    </header>
+
+    <section id="acceuil">
+        <h2>A propos de nous </h2>
+        <p>Chez E Brand, agence digitale Tunisie, nous concevons des expériences web et des stratégies digitales.
+            Nous veillons ensuite sur l’e-réputation de nos partenaires et nous animons leurs profils sociaux.
+            En résumé, nous assistons les entreprises dans leur transformation digitale.</p>
+    </section>
+    
+    <section id="services">
+        <h2>Nos services </h2>
+        <table >
+            <tr>
+                <th><img src="./stratégie.png" alt="stra_img"></th>
+                <th><img src="./design.png" alt="design_img"></th>
+                <th><img src="./development.png" alt="dev_img"></th>
+                <th><img src="./analyse.png" alt="anal_img"></th>
+                
+            </tr>
+            <tr>
+                <td>Stratégie</td>
+                <td>Design</td>
+                <td>Développement</td>
+                <td>Analyse</td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="projets">
+        <h2>Nos projets</h2>
+        <table >
+            <tr>
+                <th>Projet 1</th>
+                <th>Projet 2</th>
+                <th>Projet 3</th>
+            </tr>
+            <tr>
+                <td>Description u projet 1</td>
+                <td>Description du projet 2</td>
+                <td>Description du projet 3</td>
+            </tr>
+        </table>
+    </section>
+
+    <footer>
+        <p>Contactez-nous par e-mail : <a href="mailto:esprit@esprit.tn">esprit@esprit.tn</a></p>
+        <p>&copy; 2023 Notre Site</p>
+    </footer>
+
+</body>
+</html>
+

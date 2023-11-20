@@ -1,0 +1,136 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription</title>
+    <style>
+        /* Ajoutez des styles CSS ici selon vos besoins */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        form {
+            max-width: 600px;
+            margin: 20px auto;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #545454;
+            text-transform: capitalize;
+            font-weight: 600
+        }
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            
+        }
+        button {
+            background-color: #b94343;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            align: center;
+        }
+        button:hover {
+            background-color: #555;
+        }
+        p.error {
+            color: red;
+            margin-top: -10px;
+            margin-bottom: 10px;
+        }
+        
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0 20px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+            margin-top: 20px;
+        }
+        section {
+            margin: 20px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="./Acceuil.html">Accueil</a>
+        </nav>
+    </header>
+
+    <form>
+        <h2>Inscrivez-vous</h2>
+        <label for="nom">Nom :</label>
+        <input type="text" id="nom" name="nom" required minlength="3" placeholder="Mainsi">
+        <p class="error">Le nom est obligatoire avec une longueur minimale de 3 caractères.</p>
+
+        <label for="prenom">Prénom :</label>
+        <input type="text" id="prenom" name="prenom" required minlength="3" placeholder="Houssem">
+        <p class="error">Le prénom est obligatoire avec une longueur minimale de 3 caractères.</p>
+
+        <label for="addresse">Addresse :</label>
+        <input type="text" id="addresse" name="addresse" placeholder="12 Rue London Tunis ">
+        
+
+        <label for="telephone">Téléphone :</label>
+        <input type="tel" id="telephone" name="telephone" required pattern="[0-9]+" minlength="1" placeholder="24861379">
+        <p class="error">Le téléphone est obligatoire et ne doit pas contenir des lettres.</p>
+
+        <label for="date">Date de naissance :</label>
+        <input type="date" id="date" name="date" required placeholder="jj/mm/aa">
+        <p class="error">Le date de naissance est obligatoire .</p>
+
+        <label for="email">E-mail :</label>
+        <input type="email" id="email" name="email" required placeholder="exemple@exemple.com">
+        <p class="error">L'e-mail est obligatoire et doit avoir un format valide.</p>
+
+        <label for="motDePasse">Mot de passe :</label>
+        <input type="password" id="motDePasse" name="motDePasse" required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$" placeholder="*************">
+        <p class="error">Le mot de passe est obligatoire et doit respecter le standard de protection des mots de passe.</p>
+
+        <label for="ConmotDePass">Confirmation mot de passe :</label>
+        <input type="password" id="ConmotDePass" name="ConmotDePass" required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$" placeholder="***********">
+
+        <button type="submit">S'inscrire</button>
+        <button type="submit"></button>
+    </form>
+    <footer>
+        <p>Contactez-nous par e-mail : <a href="mailto:esprit@esprit.tn">esprit@esprit.tn</a></p>
+        <p>&copy; 2023 Notre Site</p>
+    </footer>
+
+</body>
+</html>
